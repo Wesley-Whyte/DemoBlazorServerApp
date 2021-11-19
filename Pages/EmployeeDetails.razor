@@ -1,0 +1,37 @@
+﻿@page "/employeedetails/{id}"
+
+<div class="container">
+    <div class="row justify-content-center">
+        @if (Employee != null)
+        { 
+            <div class="col-sm-8 card">
+                <div class="card-header text-center">
+                    <h1>@Employee.FirstName @Employee.LastName @Coordinates</h1>
+                </div>
+                <div class="card-body text-center">
+                    <img class="card-img-top mb-2" src="@Employee.Image"
+                         @onmousemove="@Mouse_Move" />
+                    <h4>ID: @Employee.id</h4>
+                    <h4>Email: @Employee.Email</h4>
+                    <h4>DOB: @Employee.DateOfBirth.Date.ToString("D")</h4>
+                    <h4>Phone number: @Employee.PhoneNumber</h4>
+                    <h4>Department: @Employee.Department.Name</h4>
+                    <h4>Gender: @Employee.Gender</h4>
+                    <button class="btn btn-outline-info" @onclick="@HideFooterButton_CLick" id="hide-footer">@ButtonText</button>
+                </div>
+                <div class="card-footer text-center @CssClass">
+                    <a class="btn btn-outline-primary" href="employeelist">Back</a>
+                    <a class="btn btn-outline-primary" href="editemployee/@Employee.id">Edit</a>
+                    <button class="btn btn-outline-danger" @onclick="@DeleteClick">Delete</button>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class=" spinner-grow text-primary"></div>
+        }
+    </div>
+</div>
+
+<ConfirmModalComponent @ref="ConfirmModal" ConfirmationChanged="ConfirmDelete_Click"></ConfirmModalComponent>
+ 

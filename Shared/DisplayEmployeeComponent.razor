@@ -1,0 +1,21 @@
+﻿
+<div class="card m-3" style="min-width:18Rem; max-width:300px">
+
+    <div class="card-header text-center">        
+        <h3>
+            <input type="checkbox" @onchange="CheckBox_Changed" />
+            @Employee.FirstName  @Employee.LastName
+        </h3>
+    </div> 
+    <img src="@Employee.Image" class="card-img-top  thumbnail" />
+    @if (ShowFooter)
+    {
+        <div class="card-footer text-center">
+            <a class="btn btn-outline-info" href="employeedetails/@Employee.id">View</a>
+            <a class="btn btn-outline-info" href="editemployee/@Employee.id">Edit</a>
+            <button class="btn btn-outline-danger" @onclick="@DeleteClick">Delete</button>
+        </div>
+    }
+
+</div>
+<ConfirmModalComponent @ref="ConfirmModal" ConfirmationChanged="ConfirmDelete_Click"></ConfirmModalComponent>

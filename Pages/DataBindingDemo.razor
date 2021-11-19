@@ -1,0 +1,27 @@
+﻿@page "/databindingdemo"
+<h2>Data Binding Demo</h2>
+
+<div>
+    Mr @Name
+</div>
+<div>
+    Name: <input value="@Name" />
+</div>
+<h3>Two way Data Binding</h3>
+<div>
+    Name: <input value="@Name" @onchange="@Name_Changed"/>
+</div>
+<h3>Two way Data Binding Using Bind</h3>
+<div>
+    Name: <input @bind="@Name" @bind:event="oninput" />
+</div>
+<h3>Another one</h3>
+
+<b>Description</b>
+<div>
+    <textarea @bind="Description" @bind:event="oninput"></textarea>
+</div>
+<div>
+    Count: @Description.Length
+</div>
+

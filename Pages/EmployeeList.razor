@@ -1,0 +1,25 @@
+﻿@page "/employeelist"
+<h3>Selected Employees Count - @SelectedEmployeeCount</h3>
+
+<label>Show Footer <input type="checkbox" @bind="ShowFooter"/></label>
+@if (Employees == null)
+{
+    <div class="container">
+        <div class="row justify-content-center" style="flex-direction:column">
+            <div class=" spinner-grow text-primary"></div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="card-deck"> 
+
+        @foreach (var employee in Employees)
+        {
+            <DisplayEmployeeComponent Employee="employee" ShowFooter="ShowFooter" 
+                                      OnEmployeeSelection="EmployeeSelectionChanged"
+                                      OnEmployeeDeleted="EmployeeDeleted"></DisplayEmployeeComponent>
+        }
+
+    </div>
+}

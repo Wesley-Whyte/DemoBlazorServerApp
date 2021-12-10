@@ -67,3 +67,9 @@ C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\bin\Debug\net5.0\Sy
 C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\obj\Debug\net5.0\RazorDeclaration\Shared\ConfirmModalComponent.razor.g.cs
 C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\obj\Debug\net5.0\Razor\Shared\ConfirmModalComponent.razor.g.cs
 C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\obj\Debug\net5.0\DemoBlazorServerApp.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\obj\Debug\net5.0\RazorDeclaration\Pages\DropdownPage.razor.g.cs
+C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\obj\Debug\net5.0\Razor\Pages\DropdownPage.razor.g.cs
+C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\obj\Debug\net5.0\RazorDeclaration\Pages\ListView.razor.g.cs
+C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\obj\Debug\net5.0\Razor\Pages\ListView.razor.g.cs
+C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\obj\Debug\net5.0\RazorDeclaration\Pages\RadioButtons.razor.g.cs
+C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\obj\Debug\net5.0\Razor\Pages\RadioButtons.razor.g.cs

@@ -1,0 +1,25 @@
+﻿@page "/radiobutton"
+
+<h3>RadioButtons</h3>
+
+
+<div class="card card-body shadow-lg">
+    <EditForm Model="Country">
+        <InputRadioGroup @bind-Value="Country.Countries">
+
+            @foreach (var country in Enum.GetValues(typeof(RadioChoices)))
+            {
+                <InputRadio Value="country" id="@country.ToString()" />
+                <label class="col-form-label" for="@country.ToString()">
+                    @country.ToString()
+                </label><br />
+            }
+        </InputRadioGroup>
+    </EditForm>
+</div>
+
+<p>@Country.Countries.ToString()</p>
+
+@code {
+
+}

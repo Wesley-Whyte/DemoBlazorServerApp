@@ -1,0 +1,34 @@
+﻿@page "/listview"
+<h3>ListView</h3>
+
+<div class="card card-body">
+    <ul class="list-group">
+        @foreach (var department in Departments)
+        {
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    @department.Name
+                    <span class="oi oi-trash text-danger"></span>
+                </div>
+            </li>
+        }
+    </ul>
+</div>
+
+<style>
+    div{
+        border: 1px solid red;
+    }
+
+    ul {
+        border: 1px solid orange;
+    }
+
+    li {
+        border: 1px solid green;
+    }
+</style>
+
+@code {
+
+}

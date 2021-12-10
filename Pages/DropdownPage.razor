@@ -1,0 +1,41 @@
+﻿@page "/dropdown"
+<h3>DropdownPage</h3>
+
+<div class="card card-body">
+    <button type="button" class="btn-block text-left bg-white dropdown" data-toggle="collapse" data-target="#dropdown" @onclick="DropdownClick">
+        Dropdown
+    </button>
+</div>
+<div class="collapse @CssClass" id="dropdown">
+    <div class="card card-body">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+</div>
+
+<style>
+    .dropdown{
+        border: none
+    }
+</style>
+
+@code {
+
+    [Parameter]
+    public string CssClass { get; set; } = "show";
+
+    protected void DropdownClick()
+    {
+        if (CssClass == "show")
+        {
+            CssClass = string.Empty;
+        }
+        else
+        {
+            CssClass = "show";
+        }
+    }
+
+}

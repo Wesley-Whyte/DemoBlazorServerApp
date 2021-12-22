@@ -8,17 +8,17 @@ using DemoBlazorServerApp.Services;
 
 namespace DemoBlazorServerApp.Pages
 {
-    public partial class ListView
-    { 
+    public partial class TableGrid
+    {
         [Inject]
-        public IDepartmentService DepartmentService { get; set; }
+        public IEmployeeService EmployeeService { get; set; }
 
-        public List<DepartmentModel> Departments { get; set; } = new List<DepartmentModel>();
+        public List<EmployeeModel> Employees { get; set; } = new List<EmployeeModel>();
+
 
         protected override async Task OnInitializedAsync()
         {
-            Departments = await DepartmentService.GetDepartmentAllAsync();
+            Employees = await EmployeeService.GetEmployees();
         }
-
     }
 }

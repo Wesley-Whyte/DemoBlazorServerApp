@@ -1,0 +1,53 @@
+﻿@page "/tablegrid"
+
+<div>
+    <table>
+        @foreach (var employee in Employees)
+        {
+            <tr>
+                @for (int i = 0; i < Dimension; i++)
+                {
+                    <td>
+                        <div class="card card-body">
+                            <img class="card-img" style="max-height:200px" src="@employee.Image"/>
+                            <p>@employee.FirstName @employee.LastName</p>
+                        </div>
+                    </td>
+                }
+            </tr>
+        }
+    </table>
+</div>
+
+<div class="window">
+    <div class="row row-cols-3 m-0">
+        @foreach (var employee in Employees)
+        {
+            <div class="col">
+                <img  src="@employee.Image" />
+                <p>@employee.FirstName @employee.LastName</p>
+            </div>
+        }
+
+    </div>
+</div>
+
+<style>
+    div{
+        border: 1px solid red;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .window{
+        width: 75%;
+        margin: 0 auto;
+    }
+</style>
+
+@code {
+
+    public int Dimension { get; set; } = 3;
+}

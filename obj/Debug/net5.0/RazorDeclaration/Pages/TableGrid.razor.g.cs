@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace DemoBlazorServerApp.Shared
+namespace DemoBlazorServerApp.Pages
 {
     #line hidden
     using System;
@@ -89,7 +89,8 @@ using DemoBlazorServerApp.Models;
 #line default
 #line hidden
 #nullable disable
-    public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/tablegrid")]
+    public partial class TableGrid : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -97,16 +98,10 @@ using DemoBlazorServerApp.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 53 "C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\Shared\NavMenu.razor"
+#line 50 "C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\Pages\TableGrid.razor"
        
-    private bool collapseNavMenu = true;
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
+    public int Dimension { get; set; } = 3;
 
 #line default
 #line hidden

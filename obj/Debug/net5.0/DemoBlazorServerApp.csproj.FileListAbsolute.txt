@@ -73,3 +73,5 @@ C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\obj\Debug\net5.0\Ra
 C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\obj\Debug\net5.0\Razor\Pages\ListView.razor.g.cs
 C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\obj\Debug\net5.0\RazorDeclaration\Pages\RadioButtons.razor.g.cs
 C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\obj\Debug\net5.0\Razor\Pages\RadioButtons.razor.g.cs
+C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\obj\Debug\net5.0\RazorDeclaration\Pages\TableGrid.razor.g.cs
+C:\Users\User\source\repos\DemoBlazorApp\DemoBlazorServerApp\obj\Debug\net5.0\Razor\Pages\TableGrid.razor.g.cs
